@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;                                                     /* Configurações Globais */
+    box-sizing: border-box;
+}
+
+header,                                                             /* O todo conteúdo dentro de header, título h2 dentro de section e título h3 dentro de section */
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;     /*determina o uso da fonte Bungee*/
+    font-weight: normal;                /*deixa a largura da letra como normal ao invés de 'bold'*/
+}
+
+body, input, textarea {                                             /* Tudo que estiver no body, input e textarea */
+    font-family: 'Roboto', sans-serif;      /*determina o uso da fonte Roboto*/
+}
+
+header {                                                            /* Cabeçalho */
+    padding: 16px 0;            /*aplica margem de 16px na vertical e 0 na horizontal*/
+    background-color: #182c61;  /*aplica cor de fundo do cabeçalho*/
+    color: #ecf0f1;           /*aplica cor dos textos presentes dentro do header (cabeçalho)*/
+}
+
+header nav li {                                                     /* Configurações Menu */
+    display: inline;            /* display um na frente do outro*/
+    margin-left: 16px;          /* nargem entre eles*/
+    font-size: 18px;            /*tamanho da fonte do menu*/
+}
+
+header nav li a {                                                   /* Configurações de cor e formatação do texto do Menu */
+    color: #ecf0f1;           /*cor dos itens do menu*/
+    text-decoration: none;      /*tirar o underline das opções do menu*/
+}
+
+.container {                                                        /* Container utilizado para formatar o cabeçalho e centralizar o conteúdo*/
+    max-width: 1280px;          /*largura máxima que pode atingir*/
+    width: 100%;                /*quantos % vai ocupar da largura máxima*/
+    margin: 0 auto;             /*comando para centralizar o conteúdo (0 no vertical e automático na horizontal)*/
+    
+}
+
+header .container,
+section .container {                                                /* Aqui só está especificando que essa configuração será adicionada somente no .container DENTRO de header e section*/
+    display: flex;          /*faz com que o layout se ajuste um ao lado do outro*/
+    align-items: center;    /*centraliza os items na vertical fazendo com que o título e o menu fiquem alinhados*/
+    justify-content: space-between; /*centraliza horizontalmente todo o conteúdo dentro do .container*/
+}
+
+.brands-list img {                                                  /* Alterar as imagens da lista */
+    height: 24px;           /*altura máxima de cada logotipo*/
+    margin-right: 8px;      /*adiciona uma margem na direita*/
+}
+
+.brands-list li {                                                   /* Alterar os elementos da lista */
+    display: inline;        /*display um na frente do outro*/
+}
+
+section .container {                                                /* Dentro de section e container */
+    align-items: flex-start;    /*faz com que o texto na direita começe no topo e não no centro da imagem*/
+}
+
+section {                                                           /* Dentro de section */
+    padding: 24px 0;        /*adiciona uma margem na section toda para separar um pouco do cabeçalho e outros itens (24px na vertical e 0 na horizontal)*/
+    color: #182c61;       /*muda a cor de todos os textos dentro de section*/
+}
+
+section h2 {                                                        /* Titulo h2 dentro de section */
+    margin-bottom: 16px;    /*adiciona uma margem de 16px na parte inferior do título para separar do parágrafo de texto*/
+}
+
+section p {                                                         /* Parágrafo com o texto dentro de section */
+    margin-bottom: 8px;     /*adiciona uma margem de 8px na parte inferior do título*/
+}
+
+.store-front {                                                      /* Classe criada para modificar SOMENTE a imagem da fachada da loja, sem afetar as imagens dos logotipos*/
+    margin-right: 16px;     /*adiciona uma margem na direita*/
+}
+
+.social-links img {                                                 /* Imagens das redes sociais */
+    height: 24px;           /*determina a altura da imagem*/
+}
+
+.social-links li {                                                  /* Lista dos icones de rede social */
+    display: inline;        /*coloca os logos um ao lado do outro*/
+    margin-right: 8px;
+}
+
+.social-links li a {                                                /* Lista de links */
+    text-decoration: none;  /*tira a "sujeirinha" em baixo das imagens de social-media*/
+}
+
+#contact .container {                                               /* Sessão de container dentro de id="contact" */
+    display: block;         /*faz com que o conteúdo respeite o espaço disponível na largura determinada daquela sessão*/
+}
+
+.contact-methods {                                                  /* Sessão de 'contact-methods' */
+    display: flex;          /*faz com que o layout se ajuste um ao lado do outro*/
+    justify-content: space-between; /*centraliza horizontalmente todo o conteúdo dentro da sessão*/
+}
+
+form input,
+form textarea,                                                      /* Itens dentro do formulário de contato */
+form button {
+    display: block;         /*faz com que o conteúdo respeite o espaço disponível na largura determinada daquela sessão*/
+    width: 320px;           /*determina a largura máxima*/
+    margin-bottom: 8px;     /*determina a margem na parte inferior*/
+    padding: 8px;           /*determina o espaçamento interno ou tamanho da caixa de texto*/
+}
+
+form textarea {                                                     /* Formulário de mensagem */
+    resize: none;           /*tira a possibilidade de redimensionar a janela de mensagem*/
+    height: 180px;
+}
+
+section h3 {                                                        /* Títulos h3 dentro de section */
+    margin-bottom: 16px;    /*determina margem na parte inferior*/
+}
+
+form button {                                                       /* Botão de "enviar" dentro de form */
+    background-color: #182c61; /*determina a cor de fundo da caixa do botão*/
+    color: #ecf0f1;          /*determina a cor da letra dentro do botão*/
+    border: none;           /*retira a borda preta em volta do botão*/
+    cursor: pointer;        /*determina que o cursor mude para a "mãozinha" quando passar por cima do botão*/
+}
+
+form button:hover {                                                 /* Botão de "enviar" quando passa o mouse por cima */
+    background-color: #2f4377;  /*determina a cor de fundo quando o mouse passar por cima*/
+}
+
+input:focus, textarea:focus {                                       /* Todos inputs e o textarea quand estiver SELECIONADO */
+    outline-color: #182c61;     /*determina a cor da borda quando a caixa estiver selecionada / em foco */
+}
+
+footer {                                                            /* Rodapé */
+    background-color: #182c61;  /*determina a cor de fundo do rodapé*/
+    color: #ecf0f1;             /*determina a cor do texto do rodapé*/
+    padding: 16px 0;              /*determina espaçamento de 16px na vertical e 0 na horizontal*/
+    text-align: center;
+    font-size: small;
+}
